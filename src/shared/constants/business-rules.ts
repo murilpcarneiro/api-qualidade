@@ -1,0 +1,3 @@
+export const MIN_PASSWORD_LENGTH = 8;
+export const MIN_LIMIT_CENTS = 100;
+export const MAX_TRANSACTION_DESCRIPTION_LENGTH = 120;

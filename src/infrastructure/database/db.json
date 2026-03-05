@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "b7b0b2a2-41ce-4d44-9b82-435eeb6f3eff",
+      "name": "Alice",
+      "email": "alice@mail.com",
+      "passwordHash": "$2b$10$5hWX8f2p.wfs6fZ1XTBdY.jTH3eyEYg9zpwKLD9gvCvWBHcecpVHG",
+      "createdAt": "2026-03-05T04:15:22.640Z"
+    }
+  ],
+  "cards": [
+    {
+      "id": "4d54bb71-dca8-451a-889f-1f426536288e",
+      "userId": "b7b0b2a2-41ce-4d44-9b82-435eeb6f3eff",
+      "last4": "1234",
+      "limitCents": 500000,
+      "availableLimitCents": 490000,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-05T04:16:02.004Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "728f2fee-3432-425a-bdcd-121371b72dc4",
+      "cardId": "4d54bb71-dca8-451a-889f-1f426536288e",
+      "userId": "b7b0b2a2-41ce-4d44-9b82-435eeb6f3eff",
+      "amountCents": 10000,
+      "description": "Compra mercado",
+      "status": "APPROVED",
+      "referenceMonth": "2026-03",
+      "createdAt": "2026-03-05T04:16:59.252Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "e5fbb9b4-d16d-479a-9a5d-bcc5b8d75de5",
+      "cardId": "4d54bb71-dca8-451a-889f-1f426536288e",
+      "userId": "b7b0b2a2-41ce-4d44-9b82-435eeb6f3eff",
+      "referenceMonth": "2026-03",
+      "totalCents": 10000,
+      "transactionIds": [
+        "728f2fee-3432-425a-bdcd-121371b72dc4"
+      ],
+      "generatedAt": "2026-03-05T04:17:21.615Z"
+    }
+  ]
+}
