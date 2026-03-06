@@ -25,8 +25,8 @@ export class CreateUserUseCase {
     }
 
     const existingUser = await this.userRepository.findByEmail(input.email);
-    const shouldCreateUser = existingUser ? false : true;
-    if (!shouldCreateUser) {
+
+    if (existingUser) {
       throw new BusinessRuleError("User with this email already exists");
     }
 
